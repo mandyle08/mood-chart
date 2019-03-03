@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,16 +28,21 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     legenditem.cpp \
-    mood.cpp
+    mood.cpp \
+    pdfconvert.cpp \
+    dialog.cpp
 
 HEADERS += \
         mainwindow.h \
     legenditem.h \
-    mood.h
+    mood.h \
+    pdfconvert.h \
+    dialog.h
 
 FORMS += \
         mainwindow.ui \
-    legenditem.ui
+    legenditem.ui \
+    dialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

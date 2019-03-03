@@ -7,6 +7,7 @@
 #include <QTableWidget>
 #include <QPalette>
 #include "mood.h"
+#include "dialog.h"
 
 
 namespace Ui {
@@ -26,6 +27,8 @@ private slots:
     void on_table_customContextMenuRequested(const QPoint &pos);
     void prompt_for_mood();
     void slot_mood_choice(const QString &choice);
+    void print(const QString& fileName);
+    void on_action_Print_triggered();
 
 private:
     Ui::MainWindow *ui;

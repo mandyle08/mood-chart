@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>834</width>
-    <height>568</height>
+    <width>866</width>
+    <height>630</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,237 +15,7 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QTableWidget" name="table">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="contextMenuPolicy">
-       <enum>Qt::CustomContextMenu</enum>
-      </property>
-      <attribute name="horizontalHeaderCascadingSectionResizes">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>30</number>
-      </attribute>
-      <attribute name="horizontalHeaderMinimumSectionSize">
-       <number>30</number>
-      </attribute>
-      <attribute name="horizontalHeaderStretchLastSection">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>1</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>2</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>3</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>4</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>5</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>6</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>7</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>8</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>9</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>10</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>11</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>12</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>13</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>14</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>15</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>16</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>17</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>18</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>19</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>20</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>21</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>22</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>23</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>24</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>25</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>26</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>27</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>28</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>30</string>
-       </property>
-      </row>
-      <row>
-       <property name="text">
-        <string>31</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>Jan.</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Feb</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Mar</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Apr</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>May</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>June</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>July</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Aug</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Sept</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Oct</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Dec</string>
-       </property>
-      </column>
-     </widget>
-    </item>
-    <item row="0" column="1">
+    <item row="0" column="2">
      <widget class="QFrame" name="legend">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -273,6 +43,9 @@
          </property>
         </spacer>
        </item>
+       <item row="1" column="0">
+        <layout class="QVBoxLayout" name="legendLayout"/>
+       </item>
        <item row="2" column="0">
         <spacer name="verticalSpacer">
          <property name="orientation">
@@ -286,10 +59,268 @@
          </property>
         </spacer>
        </item>
-       <item row="1" column="0">
-        <layout class="QVBoxLayout" name="legendLayout"/>
-       </item>
       </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>414</width>
+         <height>944</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>369</width>
+            <height>920</height>
+           </size>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>13</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>14</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>15</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>16</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>17</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>18</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>19</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>21</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>22</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>23</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>24</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>25</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>26</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>27</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>28</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>30</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>31</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Jan.</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Feb</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mar</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Apr</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>May</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>June</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>July</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Aug</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Sept</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Oct</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Dec</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -299,7 +330,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>834</width>
+     <width>866</width>
      <height>22</height>
     </rect>
    </property>
@@ -308,6 +339,7 @@
      <string>&amp;File</string>
     </property>
     <addaction name="action_New"/>
+    <addaction name="action_Print"/>
     <addaction name="separator"/>
     <addaction name="action_Quit"/>
    </widget>
@@ -354,6 +386,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Print">
+   <property name="text">
+    <string>&amp;Print</string>
    </property>
   </action>
  </widget>

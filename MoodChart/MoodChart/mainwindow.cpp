@@ -3,7 +3,7 @@
 #include "legenditem.h"
 #include "mood.h"
 #include <QDebug>
-
+#include "pdfconvert.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -122,4 +122,21 @@ void MainWindow::slot_mood_choice(const QString &choice)
             break;
         }
     }
+}
+
+void MainWindow::print(const QString &fileName)
+{
+
+   PdfConvert* p = new PdfConvert;
+   p->exportPDF(ui->table, fileName);
+}
+
+void MainWindow::on_action_Print_triggered()
+{
+
+   Dialog* d = new Dialog(this);
+    connect(d,SIGNAL(okay_click(QString)),this, SLOT(print(QString)));
+
+    d->exec();
+
 }
