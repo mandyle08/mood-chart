@@ -4,3 +4,4 @@
 	3. Right click on a table cell and select a mood
 	4. To print to pdf click file -> print
 	
+![](pic.png)
