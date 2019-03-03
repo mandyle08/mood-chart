@@ -22,14 +22,10 @@ MainWindow::MainWindow(QWidget *parent) :
     addMood(Mood(Qt::transparent, QString("Clear")));
 
 
-
+    // Intilize each cell of the table
     for(int x = 0; x < ui->table->columnCount(); x++){
-
         for(int y = 0; y < ui->table->rowCount(); y++){
-
-
             ui->table->setItem(y, x, new QTableWidgetItem);
-
         }
     }
 
@@ -52,6 +48,7 @@ void MainWindow::on_action_Quit_triggered()
 
 void MainWindow::addMood(const Mood &mood)
 {
+    // clears the color to null
     moods.push_back(mood);
     if(QString::compare(mood.getLabel(), "Clear"))
         ui->legendLayout->addWidget(new legendItem (nullptr, mood.getColor(), mood.getLabel()));
@@ -59,10 +56,9 @@ void MainWindow::addMood(const Mood &mood)
 
 void MainWindow::setColor(const int &x, const int &y, const QColor &color)
 {
-
+    // check to see if (x,y) are in the table
     if (x < 0 || x >= ui->table->columnCount())
         return;
-
     if (y < 0 || y >= ui->table->rowCount())
         return;
 
@@ -76,36 +72,54 @@ void MainWindow::setMood(const int &x, const int &y, const Mood &mood)
 
 void MainWindow::populateColor(const int &x, const int &y, const Mood &mood)
 {
+    // set color if the (x,y) are in the table
     if (x < 0 || x >= ui->table->columnCount())
         return;
-
     if (y < 0 || y >= ui->table->rowCount())
         return;
-
 
     ui->table->item(y, x)->setBackground(mood.getColor());
 }
 
 void MainWindow::on_table_customContextMenuRequested(const QPoint &pos)
 {
+   // grabbing appropriate item
    QTableWidgetItem *item = ui->table->itemAt(pos);
+
+   // setting the context menu
    QMenu menu(tr("Context Menu"), this);
    QAction color(tr("Set Mood"), this);
    connect(&color, SIGNAL(triggered()), this, SLOT(prompt_for_mood()));
    menu.addAction(&color);
+
+   // initialized selected mood to sentinel
+   selectedMoodIndex = -1;
+
+   // launch menu
+   // keeping track of global mouse
    menu.exec(mapToGlobal(pos));
+
+   // set x and y to appropriate table pos.
    int y = ui->table->rowAt(pos.y());
    int x = ui->table->columnAt(pos.x());
-   populateColor(x, y, moods.at(selectedMoodIndex));
+
+
+   // if they successfully selected a mood...
+   if(selectedMoodIndex != -1)
+        populateColor(x, y, moods.at(selectedMoodIndex));
 }
 
 void MainWindow::prompt_for_mood()
 {
+
    QInputDialog dialog(this);
    QStringList options;
-    connect(&dialog,SIGNAL(textValueSelected(QString)),
+
+   // Register handler for selecting a mood
+   connect(&dialog,SIGNAL(textValueSelected(QString)),
             this, SLOT(slot_mood_choice(QString)));
 
+   // populate the list
    for (int x = 0; x < moods.size(); x++){
        options.append(moods.at(x).getLabel());
    }
@@ -135,7 +149,7 @@ void MainWindow::on_action_Print_triggered()
 {
 
    Dialog* d = new Dialog(this);
-    connect(d,SIGNAL(okay_click(QString)),this, SLOT(print(QString)));
+   connect(d,SIGNAL(okay_click(QString)),this, SLOT(print(QString)));
 
     d->exec();
 
